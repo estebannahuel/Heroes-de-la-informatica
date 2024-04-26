@@ -1,0 +1,37 @@
+.main{
+width: 90%;
+margin: 0 auto;
+}
+
+.main--section{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   align-items: center;
+   
+   width: 100%;
+}
+
+.main--section--article{
+   background-color: lightblue;
+   border-radius: 3px;
+   margin: 30px 0;
+   width: 300px;  
+   padding: 20px;
+}
+
+
+.main--section--article--caja{
+   width: 300px;
+}
+
+.main--section--article--img {
+   box-sizing: border-box;
+    background-color: black;
+   border: solid 2px darkslategray;
+   width: 100%;
+   height: 200px;
+   padding: 5px;
+   margin: 5px 0;
+}
