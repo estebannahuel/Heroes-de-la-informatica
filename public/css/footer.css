@@ -20,3 +20,12 @@
     }
     
 }
+
+
+@media(min-width: 1024px){
+   
+    .footer--nav{
+       margin: 0 auto; 
+       width: 75%;
+    }
+}
