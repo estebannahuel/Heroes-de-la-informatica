@@ -1,17 +1,4 @@
 {
-  "version": 2,
-  "routes": [
-    {
-      "src": "/(.*\\.html)",
-      "headers": { "Content-Type": "text/html" },
-      "continue": true
-    },
-    {
-      "src": "/(.*\\.css)",
-      "headers": { "Content-Type": "text/css" },
-      "continue": true
-    },
-    { "handle": "filesystem" },
-    { "src": "/.*", "status": 404, "dest": "/404.html" }
-  ]
+  "builds": [{ "src": "index.html", "use": "@vercel/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "/" }]
 }
