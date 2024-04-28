@@ -1,6 +1,7 @@
 const express = require("express");
 const routers = require("./function/routers");
 const app = express();
+const path = require('path')
 const PORT = process.env.PORT || 3000;
 
 const arrayRutas = [ //routers
@@ -38,7 +39,7 @@ const arrayRutas = [ //routers
     },
 ]
 
-app.use(express.static('public'))
+app.use(express.static(path.join(__dirname, 'public')))
 
 routers.routers(app,arrayRutas)
 
