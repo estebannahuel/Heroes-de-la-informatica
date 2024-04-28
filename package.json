@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cli": "^1.0.1",
     "express": "^4.19.2",
     "nodemon": "^3.1.0",
     "vercel": "^34.1.3"
